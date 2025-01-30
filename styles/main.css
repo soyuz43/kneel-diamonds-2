@@ -1,0 +1,124 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Container Styles */
+  
+  #container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #444;
+    border: 1px solid #555;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Header Styles */
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ccc;
+  }
+  
+  /* Options Styles */
+  
+  .choices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .choices__metals,
+  .choices__sizes,
+  .choices__styles {
+    background-color: #555;
+    padding: 20px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .choices__metals:hover,
+  .choices__sizes:hover,
+  .choices__styles:hover {
+    background-color: #666;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Order Button Styles */
+  
+  .order {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #orderButton {
+    background-color: #777;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #orderButton:hover {
+    background-color: #888;
+  }
+  
+  /* Orders Styles */
+  
+  .customOrders {
+    margin-top: 40px;
+  }
+  
+  #ordersList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #ordersList li {
+    background-color: #555;
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    animation: fadeIn 0.5s;
+    color: #ccc;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Animation Styles */
+  
+  .fadeIn {
+    animation: fadeIn 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

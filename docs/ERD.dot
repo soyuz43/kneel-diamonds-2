@@ -1,0 +1,14 @@
+digraph ERD {
+    node[shape=box, style=filled];
+    Metal[label="Metal\nid: int\nname: string\npricePerOunce: float"];
+    Size[label="Size\nid: int\ncarats: float\nprice: float"];
+    Style[label="Style\nid: int\nname: string\nprice: float"];
+    Order[label="Order\nid: int\nmetalId: int\nsizeId: int\nstyleId: int\ntimestamp: datetime"];
+
+    Metal -> Order[label="has", arrowhead="crow"];
+    Size -> Order[label="has", arrowhead="crow"];
+    Style -> Order[label="has", arrowhead="crow"];
+    Order -> Metal[label="belongs", arrowhead="none", dir="back"];
+    Order -> Size[label="belongs", arrowhead="none", dir="back"];
+    Order -> Style[label="belongs", arrowhead="none", dir="back"];
+}
