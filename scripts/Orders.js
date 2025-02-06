@@ -1,5 +1,5 @@
 export const Orders = async () => {
-  const response = await fetch("http://localhost:8088/orders?_embed=metal&_embed=size&_embed=style");
+  const response = await fetch("http://localhost:8088/orders?_expand=metal&_expand=size&_expand=style");
   const orders = await response.json();
 
   console.log("Fetched Orders:", orders); 
